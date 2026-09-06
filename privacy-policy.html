@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Privacy Policy for Nistha - Study-time tracking and productivity Android application. Learn how your data is processed locally on your device.">
+  <title>Privacy Policy - Nistha</title>
+  <style>
+    :root {
+      --bg-canvas: #f8fafc;
+      --bg-surface: #ffffff;
+      --bg-subtle: #f1f5f9;
+      --bg-card: #f8fafc;
+      --border-color: #e2e8f0;
+      --border-subtle: #cbd5e1;
+      --text-main: #0f172a;
+      --text-muted: #475569;
+      --text-light: #64748b;
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --primary-light: #eff6ff;
+      --primary-border: #bfdbfe;
+      --accent: #0284c7;
+      --tag-bg: #ecfdf5;
+      --tag-text: #065f46;
+      --tag-border: #a7f3d0;
+      --badge-bg: #e0e7ff;
+      --badge-text: #3730a3;
+      --notice-bg: #fefce8;
+      --notice-border: #fde047;
+      --notice-text: #713f12;
+      --placeholder-bg: #fffbeb;
+      --placeholder-border: #f59e0b;
+      --placeholder-text: #b45309;
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 14px;
+      --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+      --max-width: 960px;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      background-color: var(--bg-canvas);
+      color: var(--text-main);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.68;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      padding: 0 1rem 3rem;
+    }
+
+    /* Top Banner / Header */
+    .header-wrapper {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding-top: 2.5rem;
+      padding-bottom: 2rem;
+    }
+
+    .brand-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--text-main);
+      text-decoration: none;
+    }
+
+    .brand-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: var(--radius-md);
+      background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      font-weight: 800;
+      font-size: 1.1rem;
+      box-shadow: 0 2px 4px rgba(37, 99, 235, 0.25);
+    }
+
+    .app-meta-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.3rem 0.75rem;
+      background-color: var(--bg-subtle);
+      border: 1px solid var(--border-color);
+      border-radius: 9999px;
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .header-card {
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 2.25rem 2rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .header-title-group {
+      margin-bottom: 1.25rem;
+    }
+
+    .header-tagline {
+      display: inline-block;
+      font-size: 0.8125rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+
+    h1 {
+      font-size: 2.25rem;
+      font-weight: 800;
+      line-height: 1.2;
+      color: var(--text-main);
+      letter-spacing: -0.03em;
+      margin-bottom: 0.75rem;
+    }
+
+    .meta-date-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background-color: var(--primary-light);
+      border: 1px solid var(--primary-border);
+      color: var(--primary-dark);
+      font-size: 0.875rem;
+      font-weight: 600;
+      padding: 0.35rem 0.85rem;
+      border-radius: var(--radius-sm);
+    }
+
+    .header-summary {
+      color: var(--text-muted);
+      font-size: 1.0625rem;
+      margin-top: 1rem;
+      max-width: 780px;
+    }
+
+    /* Key Pillars Grid */
+    .highlights-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 0.875rem;
+      margin-top: 1.5rem;
+    }
+
+    .highlight-card {
+      background-color: var(--bg-canvas);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    .highlight-title {
+      font-size: 0.875rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .highlight-desc {
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+      line-height: 1.45;
+    }
+
+    /* Layout: Navigation + Content */
+    .container {
+      max-width: var(--max-width);
+      margin: 1.5rem auto 0;
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 2rem;
+      align-items: start;
+    }
+
+    /* Table of contents sidebar */
+    .toc-panel {
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 1.25rem;
+      position: sticky;
+      top: 1.5rem;
+      box-shadow: var(--shadow-sm);
+      max-height: calc(100vh - 3rem);
+      overflow-y: auto;
+    }
+
+    .toc-heading {
+      font-size: 0.8125rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-light);
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .toc-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+
+    .toc-item a {
+      display: block;
+      padding: 0.35rem 0.5rem;
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+      text-decoration: none;
+      border-radius: var(--radius-sm);
+      line-height: 1.35;
+      transition: background-color 0.15s ease, color 0.15s ease;
+    }
+
+    .toc-item a:hover {
+      background-color: var(--primary-light);
+      color: var(--primary-dark);
+    }
+
+    .toc-item a:focus-visible {
+      outline: 2px solid var(--primary);
+      outline-offset: 1px;
+    }
+
+    /* Main Policy Content */
+    .content-panel {
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem 2.25rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    section {
+      padding-bottom: 2.25rem;
+      margin-bottom: 2.25rem;
+      border-bottom: 1px solid var(--border-color);
+      scroll-margin-top: 2rem;
+    }
+
+    section:last-of-type {
+      border-bottom: none;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--text-main);
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: baseline;
+      gap: 0.6rem;
+    }
+
+    .sec-num {
+      font-size: 0.95rem;
+      color: var(--primary);
+      font-weight: 800;
+      min-width: 1.8rem;
+    }
+
+    h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--text-main);
+      margin: 1.25rem 0 0.5rem;
+    }
+
+    p {
+      margin-bottom: 0.9rem;
+      color: var(--text-muted);
+      font-size: 0.96875rem;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul, ol {
+      margin: 0.75rem 0 1rem 1.4rem;
+      color: var(--text-muted);
+      font-size: 0.96875rem;
+    }
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+
+    strong {
+      color: var(--text-main);
+      font-weight: 600;
+    }
+
+    /* Callout & Box Styles */
+    .callout {
+      background-color: var(--bg-subtle);
+      border-left: 4px solid var(--primary);
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      padding: 1rem 1.25rem;
+      margin: 1.25rem 0;
+    }
+
+    .callout p {
+      color: var(--text-main);
+      font-size: 0.9375rem;
+      margin: 0;
+    }
+
+    .callout-title {
+      font-weight: 700;
+      margin-bottom: 0.25rem !important;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      color: var(--primary-dark) !important;
+    }
+
+    .warning-callout {
+      background-color: #fffbeb;
+      border-left: 4px solid #f59e0b;
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      padding: 1rem 1.25rem;
+      margin: 1.25rem 0;
+    }
+
+    .warning-callout p {
+      color: #78350f;
+      font-size: 0.9375rem;
+      margin: 0;
+    }
+
+    /* Placeholders */
+    .placeholder {
+      display: inline-block;
+      background-color: var(--placeholder-bg);
+      border: 1px dashed var(--placeholder-border);
+      color: var(--placeholder-text);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.875rem;
+      padding: 0.15rem 0.5rem;
+      border-radius: var(--radius-sm);
+      font-weight: 600;
+      word-break: break-word;
+    }
+
+    .placeholder-block {
+      background-color: var(--placeholder-bg);
+      border: 1px dashed var(--placeholder-border);
+      border-radius: var(--radius-md);
+      padding: 1rem 1.25rem;
+      margin: 0.75rem 0;
+    }
+
+    .placeholder-block-title {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--placeholder-text);
+      font-weight: 700;
+      margin-bottom: 0.4rem;
+    }
+
+    /* Table */
+    .data-table-wrapper {
+      overflow-x: auto;
+      margin: 1.25rem 0;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.90625rem;
+      text-align: left;
+    }
+
+    th {
+      background-color: var(--bg-subtle);
+      color: var(--text-main);
+      font-weight: 600;
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid var(--border-color);
+      white-space: nowrap;
+    }
+
+    td {
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid var(--border-color);
+      color: var(--text-muted);
+      vertical-align: top;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    tr:nth-child(even) td {
+      background-color: rgba(248, 250, 252, 0.5);
+    }
+
+    /* Contact Details Card */
+    .contact-card {
+      background-color: var(--bg-subtle);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 1.25rem 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .contact-card dl {
+      display: grid;
+      grid-template-columns: 160px 1fr;
+      gap: 0.6rem 1rem;
+      font-size: 0.9375rem;
+    }
+
+    .contact-card dt {
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    .contact-card dd {
+      color: var(--text-muted);
+      margin: 0;
+      word-break: break-all;
+    }
+
+    /* Footer */
+    footer {
+      max-width: var(--max-width);
+      margin: 2rem auto 0;
+      padding: 2rem 1.5rem;
+      border-top: 1px solid var(--border-color);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 0.75rem;
+      color: var(--text-light);
+      font-size: 0.875rem;
+    }
+
+    .footer-app-name {
+      font-size: 1.125rem;
+      font-weight: 700;
+      color: var(--text-main);
+      letter-spacing: -0.01em;
+    }
+
+    .footer-contact {
+      font-size: 0.9375rem;
+      color: var(--text-muted);
+    }
+
+    .footer-date {
+      display: inline-block;
+      font-size: 0.8125rem;
+      font-weight: 500;
+      color: var(--text-light);
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+    }
+
+    /* Responsive */
+    @media (max-width: 820px) {
+      .container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+
+      .toc-panel {
+        position: static;
+        max-height: none;
+      }
+
+      .header-card, .content-panel {
+        padding: 1.5rem;
+      }
+
+      h1 {
+        font-size: 1.875rem;
+      }
+
+      h2 {
+        font-size: 1.25rem;
+      }
+
+      .contact-card dl {
+        grid-template-columns: 1fr;
+        gap: 0.25rem;
+      }
+
+      .contact-card dt {
+        margin-top: 0.5rem;
+      }
+
+      .contact-card dt:first-child {
+        margin-top: 0;
+      }
+    }
+
+    @media print {
+      body {
+        background-color: #ffffff;
+        color: #000000;
+        padding: 0;
+      }
+
+      .toc-panel, .meta-date-badge, .header-tagline, .brand-bar {
+        display: none;
+      }
+
+      .container {
+        grid-template-columns: 1fr;
+      }
+
+      .header-card, .content-panel {
+        border: none;
+        box-shadow: none;
+        padding: 0;
+      }
+
+      section {
+        border-bottom: 1px solid #ccc;
+        page-break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Header Section -->
+  <header class="header-wrapper">
+    <div class="brand-bar">
+      <div class="brand-logo">
+        <span class="brand-icon" aria-hidden="true">N</span>
+        <span>Nistha</span>
+      </div>
+      <div class="app-meta-badge">
+        <span>Android Application</span>
+        <span aria-hidden="true">&bull;</span>
+        <span>Offline-First Productivity</span>
+      </div>
+    </div>
+
+    <div class="header-card">
+      <div class="header-title-group">
+        <span class="header-tagline">Official Legal Documentation</span>
+        <h1>Privacy Policy</h1>
+        <div class="meta-date-badge" id="last-updated-badge">
+          Last Updated: September 6, 2026
+        </div>
+      </div>
+      <p class="header-summary">
+        This Privacy Policy explains how <strong>Nistha</strong> processes information. Nistha is built on the principle of data minimization: it has no user accounts, no backend servers, and no cloud database. Your study records stay private on your device.
+      </p>
+
+      <div class="highlights-grid">
+        <div class="highlight-card">
+          <span class="highlight-title">No User Accounts</span>
+          <span class="highlight-desc">No registration, login, email verification, or passwords required.</span>
+        </div>
+        <div class="highlight-card">
+          <span class="highlight-title">100% Local Storage</span>
+          <span class="highlight-desc">Study goals, timestamps, and streaks remain strictly on your physical device.</span>
+        </div>
+        <div class="highlight-card">
+          <span class="highlight-title">No Backend Servers</span>
+          <span class="highlight-desc">We do not own, maintain, or synchronize your study data with any cloud database.</span>
+        </div>
+        <div class="highlight-card">
+          <span class="highlight-title">Max 1 Rewarded Ad/Day</span>
+          <span class="highlight-desc">A single third-party rewarded ad may be shown at most once per calendar day.</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Body Layout -->
+  <div class="container">
+
+    <!-- Table of Contents Sticky Navigation -->
+    <aside class="toc-panel" aria-label="Table of Contents">
+      <div class="toc-heading">Contents</div>
+      <nav>
+        <ul class="toc-list">
+          <li class="toc-item"><a href="#section-1">1. Privacy Policy</a></li>
+          <li class="toc-item"><a href="#section-2">2. Information We Collect</a></li>
+          <li class="toc-item"><a href="#section-3">3. How Information Is Used</a></li>
+          <li class="toc-item"><a href="#section-4">4. Local Storage</a></li>
+          <li class="toc-item"><a href="#section-5">5. Device Activity &amp; Study Verification</a></li>
+          <li class="toc-item"><a href="#section-6">6. Advertising</a></li>
+          <li class="toc-item"><a href="#section-7">7. Information Sharing</a></li>
+          <li class="toc-item"><a href="#section-8">8. Data Retention &amp; Deletion</a></li>
+          <li class="toc-item"><a href="#section-9">9. Security</a></li>
+          <li class="toc-item"><a href="#section-10">10. Children's Privacy</a></li>
+          <li class="toc-item"><a href="#section-11">11. Third-Party Services</a></li>
+          <li class="toc-item"><a href="#section-12">12. Your Choices</a></li>
+          <li class="toc-item"><a href="#section-13">13. Changes to This Privacy Policy</a></li>
+          <li class="toc-item"><a href="#section-14">14. Contact Us</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="content-panel">
+
+      <!-- 1. Privacy Policy -->
+      <section id="section-1">
+        <h2><span class="sec-num">1.</span> Privacy Policy</h2>
+        <p>
+          Welcome to the Privacy Policy for <strong>Nistha</strong> ("we", "our", or "the app"). Nistha is an Android study-time tracking and productivity application designed to help students and learners build disciplined study routines through verified focus sessions.
+        </p>
+        <p>
+          We respect your personal privacy. Nistha is designed as an <strong>offline-first, client-only application</strong>. We do not require you to create an account, register an email address, or sign in to any service to track your study sessions. We do not operate an application backend, cloud database, or remote server infrastructure to store your study records.
+        </p>
+        <p>
+          This document informs you of our practices regarding the handling of information when you download, install, and use Nistha on your Android device.
+        </p>
+      </section>
+
+      <!-- 2. Information We Collect -->
+      <section id="section-2">
+        <h2><span class="sec-num">2.</span> Information We Collect</h2>
+        <p>
+          Nistha does not collect personally identifiable information (such as your legal name, physical address, email address, phone number, contacts, photos, or biometric data) for our own records.
+        </p>
+        <p>
+          When you use the app, the following data items are generated and processed <strong>locally on your device</strong>:
+        </p>
+        <ul>
+          <li><strong>Daily study goal:</strong> Your configured target study duration for the day.</li>
+          <li><strong>Verified study time:</strong> The calculated focus time earned during verified active sessions.</li>
+          <li><strong>Study sessions:</strong> Records of individual study periods, including start and end timestamps.</li>
+          <li><strong>Pause and resume events:</strong> Local timestamps indicating when study sessions were paused and resumed.</li>
+          <li><strong>Daily completion status:</strong> Records indicating whether daily study goals were reached.</li>
+          <li><strong>Streak metrics:</strong> Current streak count, longest streak achieved, and consecutive days of meeting goals.</li>
+          <li><strong>Study history and activity calendar:</strong> Historical calendar aggregates of your study sessions.</li>
+          <li><strong>Local app settings:</strong> User-customized preferences, themes, or notification configurations.</li>
+          <li><strong>Daily rewarded-ad entitlement:</strong> Local state tracking whether the daily rewarded advertisement has been viewed for the current calendar day.</li>
+        </ul>
+        <p>
+          None of this study data is transmitted to or collected by Nistha servers.
+        </p>
+      </section>
+
+      <!-- 3. How Information Is Used -->
+      <section id="section-3">
+        <h2><span class="sec-num">3.</span> How Information Is Used</h2>
+        <p>
+          All information processed by Nistha is utilized strictly for executing the core productivity features requested by you, directly on your hardware:
+        </p>
+        <ul>
+          <li>To accurately time and record your study intervals.</li>
+          <li>To evaluate your progress against your configured daily study goal.</li>
+          <li>To maintain and display your focus streak statistics and calendar visualizer.</li>
+          <li>To verify that study sessions satisfy focus requirements (see Section 5).</li>
+          <li>To preserve your customized preferences across app launches.</li>
+          <li>To enforce the limit of at most one rewarded advertisement per calendar day.</li>
+        </ul>
+        <p>
+          We do not use your study records for behavioral profiling, commercial user tracking, or cross-application marketing.
+        </p>
+      </section>
+
+      <!-- 4. Local Storage -->
+      <section id="section-4">
+        <h2><span class="sec-num">4.</span> Local Storage</h2>
+        <p>
+          All study sessions, goals, streaks, timestamps, and app configuration values are saved locally in private app storage on your Android device (using Android local persistence mechanisms such as SQLite / Room and SharedPreferences).
+        </p>
+        <div class="callout">
+          <p class="callout-title">No Cloud Synchronization</p>
+          <p>
+            Nistha operates with <strong>no backend server, no cloud database, and no remote server-side storage</strong>. Your study history stays on your physical phone or tablet. If you change devices, your study history will not automatically transfer unless backed up via your own system-level Android backup tools.
+          </p>
+        </div>
+      </section>
+
+      <!-- 5. Device Activity and Study Verification -->
+      <section id="section-5">
+        <h2><span class="sec-num">5.</span> Device Activity and Study Verification</h2>
+        <p>
+          To help users maintain complete discipline, Nistha enforces a strict focus verification mechanism during active study sessions.
+        </p>
+        <div class="callout">
+          <p class="callout-title">How Study Verification Works</p>
+          <p>
+            During an active study session:
+          </p>
+          <ul style="margin: 0.5rem 0 0.5rem 1.25rem;">
+            <li>The user's device is expected to remain <strong>locked and screen-off</strong>.</li>
+            <li>If the device becomes <strong>active or is unlocked</strong> during an active session, Nistha automatically detects the state change and <strong>pauses the study session</strong>.</li>
+            <li>The user must return to the app and explicitly press <strong>RESUME</strong> to continue tracking.</li>
+            <li>The app <strong>does not automatically resume</strong> the study session on its own.</li>
+          </ul>
+        </div>
+        <p>
+          <strong>Privacy Clarification:</strong> This verification relies solely on local system broadcast signals (such as screen-on, screen-off, or user-present status events provided by the Android operating system). Nistha:
+        </p>
+        <ul>
+          <li>Does <strong>not</strong> record your screen contents or take screenshots.</li>
+          <li>Does <strong>not</strong> inspect, log, or track what other applications you open or use.</li>
+          <li>Does <strong>not</strong> log keystrokes, messages, browsing history, or user interactions outside Nistha.</li>
+          <li>Does <strong>not</strong> upload or transmit your lock/unlock events to any remote server.</li>
+        </ul>
+        <p>
+          The screen state is evaluated strictly locally on your device in real time to pause the study timer.
+        </p>
+      </section>
+
+      <!-- 6. Advertising -->
+      <section id="section-6">
+        <h2><span class="sec-num">6.</span> Advertising</h2>
+        <p>
+          Nistha integrates a third-party rewarded advertising software development kit (SDK) to support the ongoing development and maintenance of the app.
+        </p>
+        <ul>
+          <li><strong>Daily Frequency Cap:</strong> A rewarded advertisement may be displayed <strong>at most once per calendar day</strong>.</li>
+          <li><strong>Opt-In / User-Initiated:</strong> Rewarded advertisements are triggered by explicit user action within the app.</li>
+          <li><strong>No Backend Transmission:</strong> Nistha itself does not use the advertising system to transmit, link, or store your study logs, goals, or streak data on any server.</li>
+          <li><strong>Third-Party Processing:</strong> The third-party advertising provider may independently collect and process technical device information in accordance with its own privacy policy. This data may include your mobile device advertising identifier (e.g., Google Advertising ID / AAID), IP address, device model, operating system version, and advertisement interaction statistics.</li>
+        </ul>
+        <div class="placeholder-block">
+          <div class="placeholder-block-title">Advertising Provider Placeholder</div>
+          <p>
+            The specific advertising network integrated into the release build of Nistha will be listed below along with a link to its privacy policy:
+          </p>
+          <p>
+            <strong>Provider:</strong> <span class="placeholder">[INSERT ADVERTISING PROVIDER NAME, e.g., Google AdMob / Unity Ads]</span><br>
+            <strong>Privacy Policy URL:</strong> <span class="placeholder">[INSERT ADVERTISING PROVIDER PRIVACY POLICY URL]</span>
+          </p>
+        </div>
+      </section>
+
+      <!-- 7. Information Sharing -->
+      <section id="section-7">
+        <h2><span class="sec-num">7.</span> Information Sharing</h2>
+        <p>
+          We adhere to strict data-sharing limitations:
+        </p>
+        <ul>
+          <li><strong>No Sale of Personal Information:</strong> Nistha does not sell, rent, lease, trade, or monetize your personal information or study data.</li>
+          <li><strong>No Nistha Cloud Infrastructure:</strong> Because we do not run a server backend or cloud database, we do not share your study records with any third-party data brokers, marketers, or cloud analytics vendors.</li>
+          <li><strong>Third-Party Advertising Providers:</strong> As outlined in Section 6, the third-party advertising SDK operates within the app to deliver rewarded ads and may collect diagnostic and ad-serving data directly from your device under their respective privacy policies.</li>
+          <li><strong>Legal Requirements:</strong> We may disclose information if required to do so by applicable law, regulation, legal process, or governmental request, to the extent such information is accessible to us.</li>
+        </ul>
+      </section>
+
+      <!-- 8. Data Retention and Deletion -->
+      <section id="section-8">
+        <h2><span class="sec-num">8.</span> Data Retention and Deletion</h2>
+        <p>
+          Because Nistha does not transmit your study records to any remote server, <strong>we do not retain your data on external servers</strong>. Your data remains stored exclusively on your device for as long as you retain the application.
+        </p>
+        <h3>How to Delete Your Data</h3>
+        <p>
+          You have complete ownership and control over your locally stored study data. You can delete all your records at any time through any of the following methods:
+        </p>
+        <ol>
+          <li>
+            <strong>In-App Clear Data (if available):</strong> If implemented in your installed version of Nistha, use the in-app "Clear Data" or "Reset History" option found within the app settings.
+          </li>
+          <li>
+            <strong>Android System Settings:</strong> You can purge all application data at any time via your device settings:
+            <br>
+            <em>Settings &rarr; Apps (or Application Manager) &rarr; Nistha &rarr; Storage &amp; Cache &rarr; tap <strong>"Clear Storage"</strong> (or "Clear Data").</em>
+          </li>
+          <li>
+            <strong>Uninstalling Nistha:</strong> Uninstalling the application removes the app and permanently deletes its internal local storage, including all study sessions, goals, streaks, and preferences from your device.
+          </li>
+        </ol>
+      </section>
+
+      <!-- 9. Security -->
+      <section id="section-9">
+        <h2><span class="sec-num">9.</span> Security</h2>
+        <p>
+          The security of your study data is tied directly to the physical and software security of your Android device. Because your study logs remain in the app's sandboxed local storage and are not transmitted over the internet to a Nistha backend, exposure risks associated with centralized data breaches or server unauthorized access are eliminated.
+        </p>
+        <p>
+          To safeguard your locally stored data, we recommend:
+        </p>
+        <ul>
+          <li>Securing your Android device with a strong screen lock (PIN, password, pattern, or biometrics).</li>
+          <li>Keeping your Android operating system up to date with the latest security patches.</li>
+          <li>Refraining from rooting or modifying your device firmware in ways that weaken Android's application sandboxing.</li>
+        </ul>
+      </section>
+
+      <!-- 10. Children's Privacy -->
+      <section id="section-10">
+        <h2><span class="sec-num">10.</span> Children's Privacy</h2>
+        <p>
+          Nistha is designed as a general-utility productivity and study tracking tool. The app does not require account creation, does not solicit user names, and does not maintain an online community or chat feature.
+        </p>
+        <p>
+          We do not knowingly collect personal information from children. Because all study records are stored strictly offline on the user's personal device, Nistha does not create, maintain, or store personal profiles of any user, including children.
+        </p>
+        <p>
+          Third-party advertising SDKs integrated into the app are configured to adhere to applicable platform requirements. If you are a parent or guardian and have concerns about technical device data collected by a third-party advertising provider, please contact us using the details provided below.
+        </p>
+      </section>
+
+      <!-- 11. Third-Party Services -->
+      <section id="section-11">
+        <h2><span class="sec-num">11.</span> Third-Party Services</h2>
+        <p>
+          Nistha may integrate third-party software libraries or services. These third parties process technical data independently in accordance with their respective privacy policies:
+        </p>
+        <div class="data-table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Service Type</th>
+                <th>Provider</th>
+                <th>Purpose</th>
+                <th>Privacy Documentation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Rewarded Advertising</td>
+                <td><span class="placeholder">[INSERT AD PROVIDER NAME]</span></td>
+                <td>Displaying daily rewarded advertisement (max 1/day)</td>
+                <td><span class="placeholder">[INSERT PRIVACY LINK]</span></td>
+              </tr>
+              <tr>
+                <td>Operating System Platform</td>
+                <td>Google Play Services / Android</td>
+                <td>Core OS execution, app distribution, and system notifications</td>
+                <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- 12. Your Choices -->
+      <section id="section-12">
+        <h2><span class="sec-num">12.</span> Your Choices</h2>
+        <p>
+          You have full control over how information, permissions, and advertising are managed on your device:
+        </p>
+        <ul>
+          <li><strong>Resetting Advertising Identifiers:</strong> You can reset or delete your device's Google Advertising ID (AAID) at any time through your device settings: <em>Settings &rarr; Google &rarr; Ads (or Privacy &rarr; Ads) &rarr; "Reset advertising ID" or "Delete advertising ID"</em>.</li>
+          <li><strong>Managing Notifications:</strong> If notifications are enabled, you can manage or disable them at any time through <em>Settings &rarr; Apps &rarr; Nistha &rarr; Notifications</em>.</li>
+          <li><strong>Total Data Reset:</strong> You can clear all study logs and streak histories at any time by clearing the app's local storage or uninstalling the app (as detailed in Section 8).</li>
+        </ul>
+
+        <h3>Permissions</h3>
+        <p>
+          Nistha requests only those Android permissions that are strictly necessary to deliver its core study verification functionality and support rewarded ad delivery. We do not claim or request permissions unless required by the implementation. We do not request permissions for personal data such as contacts, photos, microphone, or precise location.
+        </p>
+        <div class="placeholder-block">
+          <div class="placeholder-block-title">Required Permissions Placeholder</div>
+          <p>
+            Verify and insert the exact permissions declared in your final <code style="font-size:0.875rem;">AndroidManifest.xml</code>:
+          </p>
+          <p class="placeholder" style="display: block; margin: 0.5rem 0;">
+            [INSERT ACTUAL PERMISSIONS USED BY THE FINAL APP]
+          </p>
+          <p style="font-size: 0.875rem; color: var(--text-light); margin-top: 0.5rem;">
+            <em>Typical focus tracker permissions include:</em>
+          </p>
+          <ul style="font-size: 0.875rem; color: var(--text-light); margin-top: 0.25rem;">
+            <li><code>FOREGROUND_SERVICE</code>: To maintain the active study timer while the screen is turned off.</li>
+            <li><code>POST_NOTIFICATIONS</code>: To display session status and notification alerts.</li>
+            <li><code>INTERNET</code> &amp; <code>ACCESS_NETWORK_STATE</code>: Required by the advertising SDK to load rewarded advertisements.</li>
+          </ul>
+        </div>
+        <p>
+          You can view, grant, or revoke permissions at any time through your device's operating system settings: <em>Settings &rarr; Apps &rarr; Nistha &rarr; Permissions</em>.
+        </p>
+      </section>
+
+      <!-- 13. Changes to This Privacy Policy -->
+      <section id="section-13">
+        <h2><span class="sec-num">13.</span> Changes to This Privacy Policy</h2>
+        <p>
+          We may update this Privacy Policy from time to time to reflect modifications in our app functionality, updates to Android platform requirements, or changes to advertising integrations.
+        </p>
+        <p>
+          When updates occur, we will revise the <strong>"Last Updated"</strong> date displayed at the top and bottom of this document. Any revisions become effective immediately upon being published on this page. We encourage you to review this policy periodically.
+        </p>
+      </section>
+
+      <!-- 14. Contact Us -->
+      <section id="section-14">
+        <h2><span class="sec-num">14.</span> Contact Us</h2>
+        <p>
+          If you have questions, feedback, or concerns regarding this Privacy Policy or the privacy practices of Nistha, please contact us:
+        </p>
+        <div class="contact-card">
+          <dl>
+            <dt>Application:</dt>
+            <dd><strong>Nistha</strong></dd>
+
+            <dt>Developer / Organization:</dt>
+            <dd><span class="placeholder">[YOUR NAME OR COMPANY]</span></dd>
+
+            <dt>Contact Email:</dt>
+            <dd><span class="placeholder">[YOUR PRIVACY EMAIL]</span></dd>
+          </dl>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-app-name">Nistha</div>
+    <div class="footer-contact">
+      Contact: <span class="placeholder">[YOUR PRIVACY EMAIL]</span>
+    </div>
+    <div class="footer-date">
+      Last Updated: September 6, 2026
+    </div>
+  </footer>
+
+</body>
+</html>
